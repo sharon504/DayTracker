@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 .envrc
+.direnv/
 build/
 develop-eggs/
 dist/
