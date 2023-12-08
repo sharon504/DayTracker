@@ -1,13 +1,5 @@
-import firebase_admin
-from flask import Blueprint, render_template
-from firebase_admin import credentials
-
-# secret_path =
-
-cred = credentials.Certificate(
-        "./.secret/testfrostcode-firebase-adminsdk-ayrxz-5eac64d01b.json")
-firebase_admin.initialize_app(cred)
-
+from flask import Blueprint, render_template, url_for
+from . import cred
 
 router = Blueprint('public', __name__, url_prefix="/")
 

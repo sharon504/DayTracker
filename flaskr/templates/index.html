@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>To-Do List</title>
-    <link rel="stylesheet" href="{{ url_for('static', 'css/style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
   </head>
   <body>
     <div class="todo-container">
@@ -12,6 +15,6 @@
       <button onclick="addItem()">Add</button>
       <ul id="todoList"></ul>
     </div>
-    <script src="{{ url_for('static', 'js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>

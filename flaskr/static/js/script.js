@@ -18,7 +18,7 @@ function addItem() {
   todoList.appendChild(li);
   document.getElementById("newItem").value = "";
 }
-const apiUrl = "https://your-backend-api-url"; // Replace this with your backend API URL
+const apiUrl = "http://127.0.0.1:5000/"; // Replace this with your backend API URL
 
 // Function to fetch and display existing To-Do list items
 async function getTodoList() {
